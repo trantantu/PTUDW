@@ -11,7 +11,7 @@ class ContactService {
             phone: payload.phone,
             favorite: payload.favorite,
         };
-        Objects.keys(contact).forEach(
+        Object.keys(contact).forEach(
             (key) => contact[key] === undefined && delete contact[key]
         );
         return contact;
